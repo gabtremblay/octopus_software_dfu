@@ -1,7 +1,6 @@
 # octopus_software_dfu
 Script and wire to reset a BTT Octopus via the Raspberry PI GPIO pins and flash klipper on it
 
-- [octopus_software_dfu](#octopus-software-dfu)
   * [Prerequisites](#prerequisites)
   * [Required parts](#required-parts)
   * [Create a two sided wire](#create-a-two-sided-wire)
