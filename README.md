@@ -23,8 +23,9 @@ We're using the TFT reset line on the BTT Octopus to reset the board. This pin n
 
 - On the two-ended wire side, connect the reset wire (Long) To TFT_RST and the short one to TFT_GND)
 - RST is pin 1, GND is pin 4 on the TFT connector
+
 ![](./images/tft_pins.jpg)
--
+
 ![](./images/tft_connection.jpg)
 
 - Finally connect the wire to the raspberry pi GPIO19 (Board pin 35)
