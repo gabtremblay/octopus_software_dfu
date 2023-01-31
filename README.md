@@ -93,6 +93,7 @@ File downloaded successfully
 Transitioning to dfuMANIFEST state
 dfu-util: can't detach
 Resetting USB to switch back to runtime mode
+Rebooting to klipper, please wait
 Flashing complete
 ```
 
