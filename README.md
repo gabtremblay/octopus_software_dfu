@@ -1,9 +1,18 @@
 # octopus_software_dfu
 Script and wire to reset a BTT Octopus via the Raspberry PI GPIO pins and flash klipper on it
 
+- [octopus_software_dfu](#octopus-software-dfu)
+  * [Prerequisites](#prerequisites)
+  * [Required parts](#required-parts)
+  * [Create a two sided wire](#create-a-two-sided-wire)
+  * [Creating the reset wire](#creating-the-reset-wire)
+  * [Connecting the wires to the octopus](#connecting-the-wires-to-the-octopus)
+  * [Connect both wires to the raspberry py](#connect-both-wires-to-the-raspberry-py)
+  * [Using the script](#using-the-script)
+
 ## Prerequisites
 - You should already be able to compile klipper on your raspberry pi and use "make flash FLASH_DEVICE=..." to flash your octopus via USB in DFU.
-- 
+
 ## Required parts
 - 3x wires
 - 5x dupont connector
@@ -40,8 +49,12 @@ We're using the TFT reset line on the BTT Octopus to reset the board. This pin n
 ![](./images/rpi_side.jpg)
 
 ## Using the script
-- copy
-
+- Copy flash_octopus.sh to your klipper directory
+- run chmod 755 flash_octopus.sh
+- run make menuconfig
+- run make
+- make sure your octopus is connected via usb to your raspberry pi
+- run ./flash_octopus.sh
 
 
 
