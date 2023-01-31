@@ -11,6 +11,9 @@ Script and wire to reset a BTT Octopus via the Raspberry PI GPIO pins and flash 
 - 1x capacitor roughly between 1 µF to 100 µF (altough you could probably get away with 0.1 uF)
 - Heat shrink tubing or tape
 
+## Create a two sided wire
+- Use two dupont connector to make a long enough straight cable to reach between your raspberry pi gpio pins and the TFT header on the BTT Octopus with a female connector on both end.
+
 ## Creating the reset wire
 We're using the TFT reset line on the BTT Octopus to reset the board. This pin needs to be pulled-down. In order to avoid driving the NRST pin high we use a low forward voltage schotky diode.
 
@@ -20,8 +23,8 @@ We're using the TFT reset line on the BTT Octopus to reset the board. This pin n
 - You can tiddy it up with some heat shrink tubing or tape
 ![](./images/completed_wire.jpg)
 
-## Connecting the PI to the octopus
-- Connect the BOOT0 left pin to the raspberry pi GPIO26 (Board pin 37)
+## Connecting the wires to the octopus
+- Connect the BOOT0 left pin to your straight cable
 ![](./images/boot0_pin.jpg)
 
 - On the two-ended wire side, connect the reset wire (Long) To TFT_RST and the short one to TFT_GND)
@@ -31,7 +34,9 @@ We're using the TFT reset line on the BTT Octopus to reset the board. This pin n
 
 ![](./images/tft_connection.jpg)
 
-- Finally connect the wire to the raspberry pi GPIO19 (Board pin 35)
+## Connect both wires to the raspberry py
+- Connect the BOOT0 cable to the raspberry pi GPIO26 (Board pin 37)
+- Connect the reset wire to the raspberry pi GPIO19 (Board pin 35)
 ![](./images/rpi_side.jpg)
 
 ## Using the script
