@@ -14,7 +14,7 @@ Script and wire to reset a BTT Octopus via the Raspberry PI GPIO pins and flash 
 
 ## Required parts
 - 3x wires
-- 5x dupont connector
+- 5x female dupont connector
 - 1x schotky diode such as 1N5817
 - 1x capacitor roughly between 1 µF to 100 µF (altough you could probably get away with 0.1 uF)
 - Heat shrink tubing or tape
